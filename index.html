@@ -195,6 +195,10 @@ section.block{padding-block:100px}
 .proj p{color:var(--muted);font-size:14.5px}
 .proj .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
 .proj .chips span{font:500 11.5px/1 var(--mono);padding:6px 8px;border-radius:5px;background:var(--bg-2);color:var(--muted);border:1px solid var(--line)}
+.plinks{display:flex;flex-wrap:wrap;gap:8px;padding-top:4px}
+.plinks a{font:600 13px/1 var(--sans);padding:9px 12px;border-radius:8px;text-decoration:none;border:1px solid var(--line);color:var(--fg);transition:border-color .15s,background .15s}
+.plinks a:hover{border-color:var(--gold)}
+.plinks a.go{background:var(--gold);border-color:var(--gold);color:var(--bg)}
 .proj.video{grid-column:span 2;display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:24px;align-items:center}
 .proj.video .inner{display:flex;flex-direction:column;gap:10px;min-width:0;height:100%}
 .proj.video .phone{border-radius:22px;border-width:5px}
@@ -296,7 +300,7 @@ footer{border-top:1px solid var(--line);padding-block:26px;color:var(--dim);font
           <span class="badge"><b>UNAMA</b> · Direito 2025</span>
           <span class="badge"><b>OAB</b> no 8º semestre</span>
           <span class="badge"><b>2 varas</b> em gabinete</span>
-          <span class="badge"><b>Software</b> publicado</span>
+          <span class="badge"><b>5 projetos</b> abertos no GitHub</span>
         </div>
       </div>
 
@@ -413,16 +417,16 @@ footer{border-top:1px solid var(--line);padding-block:26px;color:var(--dim);font
 
       <div class="projects">
         <article class="proj glow"><div class="k">Jurimetria</div><h3>Ratio Decidendi</h3><p>Análise estatística de decisões judiciais para extrair padrões decisórios e orientar a gestão de processos com dados.</p><div class="chips"><span>estatística</span><span>precedentes</span></div></article>
-        <article class="proj glow"><div class="k">IA jurídica</div><h3>Skill Calculista Trabalhista</h3><p>Ensina a IA a elaborar, liquidar e auditar cálculos trabalhistas com memória por competência, fontes, reflexos e encargos.</p><div class="chips"><span>Claude</span><span>auditoria</span></div></article>
+        <article class="proj glow"><div class="k">IA jurídica</div><h3>Skill Calculista Trabalhista</h3><p>Ensina a IA a elaborar, liquidar e auditar cálculos trabalhistas com memória por competência, fontes, reflexos e encargos.</p><div class="chips"><span>Claude</span><span>auditoria</span></div><div class="plinks"><a class="" href="https://github.com/yarceygomes/calculista-trabalhista" target="_blank" rel="noopener">Ver no GitHub ↗</a></div></article>
         <article class="proj glow"><div class="k">Redação</div><h3>Escrita jurídica modular</h3><p>Biblioteca de trechos jurídicos personalizados para montar peças e minutas com velocidade e rigor técnico.</p><div class="chips"><span>minutas</span><span>modelos</span></div></article>
-        <article class="proj glow"><div class="k">Gestão</div><h3>Sistema do Escritório</h3><p>Clientes, processos, previdenciário e agenda de prazos e audiências, com as pastas de cada processo sincronizadas no disco.</p><div class="chips"><span>Python</span><span>SQLite</span><span>prazos</span></div></article>
-        <article class="proj glow"><div class="k">PJe</div><h3>Compressor de PDF para o PJe</h3><p>Ajusta PDFs aos limites do PJe antes do protocolo, direto no navegador, sem enviar o documento para a internet.</p><div class="chips"><span>sigilo</span><span>navegador</span></div></article>
-        <article class="proj glow"><div class="k">Autoria</div><h3>Manual de Redação Jurídica Forense</h3><p>Obra sobre estilo, estrutura e técnica argumentativa na prática forense.</p><div class="chips"><span>redação</span><span>argumentação</span></div></article>
+        <article class="proj glow"><div class="k">Gestão</div><h3>Sistema do Escritório</h3><p>Clientes, processos, previdenciário e agenda de prazos e audiências, com as pastas de cada processo sincronizadas no disco.</p><div class="chips"><span>Python</span><span>SQLite</span><span>prazos</span></div><div class="plinks"><a class="" href="https://github.com/yarceygomes/sistema-escritorio" target="_blank" rel="noopener">Ver código ↗</a></div></article>
+        <article class="proj glow"><div class="k">PJe</div><h3>Compressor de PDF para o PJe</h3><p>Ajusta PDFs aos limites do PJe antes do protocolo, direto no navegador, sem enviar o documento para a internet.</p><div class="chips"><span>sigilo</span><span>navegador</span></div><div class="plinks"><a class="go" href="https://yarceygomes.github.io/compressor-pdf-pje/" target="_blank" rel="noopener">Usar agora ↗</a><a class="" href="https://github.com/yarceygomes/compressor-pdf-pje" target="_blank" rel="noopener">Código ↗</a></div></article>
+        <article class="proj glow"><div class="k">Autoria</div><h3>Manual de Redação Jurídica Forense</h3><p>Guia de 50 páginas sobre estilo, estrutura e técnica argumentativa na prática forense, para escrever com mais técnica, agilidade e persuasão.</p><div class="chips"><span>redação</span><span>argumentação</span></div><div class="plinks"><a class="go" href="media/manual-redacao-juridica-forense.pdf" target="_blank" rel="noopener">Ler o manual (PDF) ↗</a></div></article>
         <article class="proj video glow">
           <div class="inner"><div class="k">IA generativa · Vídeo</div><h3>Vídeos de utilidade pública</h3><p>Série de vídeos sobre direitos com roteiro jurídico e fontes, narração por IA e animação programada em código.</p><div class="chips"><span>acidente de trabalho</span><span>assédio moral</span><span>gestante</span><span>doméstica</span><span>falso advogado</span></div></div>
           <div class="phone"><video src="media/reels.mp4" poster="media/reels-poster.jpg" controls playsinline preload="none" aria-label="Vídeo sobre o golpe do falso advogado"></video></div>
         </article>
-        <article class="proj glow"><div class="k">Jogo</div><h3>Corre, Doutor!</h3><p>Um jogo sobre a corrida contra os prazos processuais: “o prazo não espera”. Interface, animação e lógica feitas do zero.</p><div class="chips"><span>jogo</span><span>prazos</span></div></article>
+        <article class="proj glow"><div class="k">Jogo</div><h3>Corre, Doutor!</h3><p>Um jogo sobre a corrida contra os prazos processuais: “o prazo não espera”. Interface, animação e lógica feitas do zero.</p><div class="chips"><span>jogo</span><span>prazos</span></div><div class="plinks"><a class="go" href="https://yarceygomes.github.io/corre-doutor/" target="_blank" rel="noopener">Jogar agora ↗</a><a class="" href="https://github.com/yarceygomes/corre-doutor" target="_blank" rel="noopener">Código ↗</a></div></article>
       </div>
     </div>
   </section>
