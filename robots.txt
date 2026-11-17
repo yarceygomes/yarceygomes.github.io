@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yarceygomes.github.io/sitemap.xml
